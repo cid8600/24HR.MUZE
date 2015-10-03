@@ -1,143 +1,144 @@
-@import 'bourbon';
+@import "bourbon";
 @import "base/grid-settings";
-@import 'neat';
+@import "neat";
 @import "base/base";
 @import "all";
 
 section {
-  @include outer-container;
-  text-align: center;
-  margin-bottom: 3em;
-  padding-top: 2em;
-  padding-right: 2em;
-  padding-left: 2em;
+    @include outer-container;
+    text-align: center;
+    margin-bottom: 3em;
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
 
-  & > code, code.block {
-    display: block;
-  }
-
-  div {
-    height: $body-line-height*4;
-    line-height: $body-line-height;
-    text-align: left;
-    padding: 1em;
-  }
-
-  &.zero {
-    div {
-      @include span-columns(6);
-      height: 20em;
+    & > code, code.block {
+        display: block;
     }
-  }
+
+    div {
+        height: $body-line-height * 4;
+        line-height: $body-line-height;
+        text-align: left;
+        padding: 1em;
+    }
+
+    &.zero {
+        div {
+            @include span-columns(6);
+            height: 20em;
+        }
+    }
 }
 
 body {
-  color: $textblue;
-  line-height: $body-line-height;
-  text-align: center;
+    color: $textblue;
+    line-height: $body-line-height;
+    text-align: center;
 }
 
 h3 {
-  margin: 1em;
+    margin: 1em;
 }
 
 pre {
-  line-height: 1.6em;
+    line-height: 1.6em;
 }
 
-
 section {
-  background-color: $ltblue;
-  text-align: center;
-  line-height: $body-line-height*1.5;
-
-  div {
-    background-color: $midblue;
-    font-size: 0.8em;
-    margin-bottom: 2em;
-  }
-
-  &.first {
-    div#gamma {
-      aside, article {
-        background-color: #FFF;
-      }
-    }
-  }
-
-  &.second {
-    div#beta {
-      aside, article {
-        background-color: $dkblue;
-      }
-
-      aside {
-        border-bottom: 1px solid $dkerblue;
-      }
-    }
-  }
-
-  &.third {
-     div#dummy {
-      background-color: $midblue;
-      margin-bottom: 0;
-    }
-
-    div#alpha {
-      aside {
-        background-color: $dkblue;
-        border-bottom: 1px solid $dkerblue;
-      }
-
-      article {
-        background-color: $dkblue;
-      }
-    }
-  }
-
-  &.sixth {
-
-    > pre {
-      padding: 10px 0;
-    }
-
-    // @include media($mobile) {
-    //   font-size: 0.9em;
-    //   line-height: 1.5em;
-    // }
+    background-color: $ltblue;
+    text-align: center;
+    line-height: $body-line-height * 1.5;
 
     div {
-      line-height: 2em;
-      min-height: 20em;
-      text-align: left;
-      padding: 1em;
+        background-color: $midblue;
+        font-size: 0.8em;
+        margin-bottom: 2em;
     }
 
-    div#alpha {
-      @include span-columns(4);
-
-    //   @include media($mobile) {
-    //     @include span-columns(3);
-    //   }
+    &.first {
+        div#gamma {
+            aside, article {
+                background-color: #FFF;
+            }
+        }
     }
 
-    div#beta {
-      @include span-columns(8);
+    &.second {
+        div#beta {
+            aside, article {
+                background-color: $dkblue;
+            }
 
-      // @include media($mobile) {
-      //   @include span-columns(3);
-      // }
+            aside {
+                border-bottom: 1px solid $dkerblue;
+            }
+        }
     }
-  }
+
+    &.third {
+        div#dummy {
+            background-color: $midblue;
+            margin-bottom: 0;
+        }
+
+        div#alpha {
+            aside {
+                background-color: $dkblue;
+                border-bottom: 1px solid $dkerblue;
+            }
+
+            article {
+                background-color: $dkblue;
+            }
+        }
+    }
+
+    &.sixth {
+        > pre {
+            padding: 10px 0;
+        }
+
+        // @include media($mobile) {
+        //   font-size: 0.9em;
+        //   line-height: 1.5em;
+        // }
+
+        div {
+            line-height: 2em;
+            min-height: 20em;
+            text-align: left;
+            padding: 1em;
+        }
+
+        div#alpha {
+            @include span-columns(4);
+
+            //   @include media($mobile) {
+            //     @include span-columns(3);
+            //   }
+
+        }
+
+        div#beta {
+            @include span-columns(8);
+
+            // @include media($mobile) {
+            //   @include span-columns(3);
+            // }
+
+        }
+    }
 }
 
 div.code {
-  background-color: $ltblue;
-  text-align: center;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+    background-color: $ltblue;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
-@import 'header';
-@import 'nameform';
-@import 'footer';
+@import "header";
+@import "btngroup";
+@import "nameform";
+@import "footer";

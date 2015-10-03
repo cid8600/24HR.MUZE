@@ -13,6 +13,15 @@
     <link rel="stylesheet" href="assets/tf.css">
 
     {{content-for 'head-footer'}}
+    <script src="http://client-solutions.livefyre.com/cid/maps/modernizr-geo.js"></script>
+    <script>
+    // Polly Fill if browser doesn't support geo
+    Modernizr.load({
+        test: Modernizr.geolocation,
+        yep: '',
+        nope: 'http://client-solutions.livefyre.com/cid/maps/geo-polyfill.js'
+    });
+    </script>
   </head>
   <body>
     {{content-for 'body'}}
