@@ -4,6 +4,12 @@
 @import "base/base";
 @import "all";
 @import "refills/_dropdown";
+@import "refills/_parallax";
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
 
 section {
     @include outer-container;
@@ -132,14 +138,6 @@ section {
     }
 }
 
-div.code {
-    background-color: $ltblue;
-    text-align: center;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
-
 @import "header";
-@import "btngroup";
 @import "nameform";
 @import "footer";
