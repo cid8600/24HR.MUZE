@@ -1,0 +1,16 @@
+footer {
+  padding: 2em;
+  display: block;
+  clear: both;
+
+  a.back-button {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 1em;
+    background-color: $dkerblue;
+
+    &:hover {
+      background-color: $textblue;
+    }
+  }
+}

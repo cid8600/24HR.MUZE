@@ -1,0 +1,26 @@
+$nameHeight: 36px;
+.name-form-container {
+  @include outer-container;
+  @include row();
+  @include pad(30px 10px);
+  .name-form {
+    @include direction-context(left-to-right) {
+       label {
+        line-height: $nameHeight;
+         @include span-columns(1);
+        }
+        input {
+          height: $nameHeight;
+          @include span-columns(3);
+        }
+      }
+  }
+  .text {
+    @include span-columns(8);
+    h3 {
+      line-height: $nameHeight;
+      margin: 0 0 0 20px;
+      text-align: left;
+    }
+  }
+}
