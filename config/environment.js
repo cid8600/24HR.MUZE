@@ -20,7 +20,7 @@ module.exports = function(environment) {
     // config/environment.js
     contentSecurityPolicy: {
       'default-src': "'none'",
-      'script-src': "'self' 'unsafe-eval' liveReloadPort http://client-solutions.livefyre.com", // Allow scripts from https://cdn.mxpnl.com
+      'script-src': "'self' 'unsafe-eval' 'unsafe-inline' liveReloadPort http://client-solutions.livefyre.com https://ajax.googleapis.com/", // Allow scripts from https://cdn.mxpnl.com
       'font-src': "'self' http://fonts.gstatic.com", // Allow fonts to be loaded from http://fonts.gstatic.com
       'connect-src': "'self' liveReloadPort https://api.mixpanel.com https://api.github.com/", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
       'img-src': "'self'",

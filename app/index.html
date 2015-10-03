@@ -25,10 +25,29 @@
   </head>
   <body>
     {{content-for 'body'}}
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="assets/vendor.js"></script>
-    <script src="assets/tf.js"></script>
 
+    <script src="assets/tf.js"></script>
+    <script>
+
+      $(function() {
+
+        $('body').on('click', '.dropdown-button', function(e) {
+          var $button, $menu;
+
+          $button = $(e.currentTarget);
+          console.dir($button);
+
+          $menu = $button.siblings(".dropdown-menu");
+          $menu.toggleClass("show-menu");
+          $menu.children("li").click(function() {
+            $menu.removeClass("show-menu");
+            $button.html($(this).html());
+          });
+        });
+      });
+    </script>
     {{content-for 'body-footer'}}
   </body>
 </html>
