@@ -47,11 +47,25 @@ $(function() {
             // make API call
             $('body').on('click', '.inspirebtn', function (e) {
                 self.eb.buildStr(self);
-              // handle resp (if no items, display message)
-              // build html
-              // render to dom
-
             });
+
+            // toggle list / slide views
+            $('body').on('click', '#view-toggle', function (e) {
+                var state = false; // list view
+                var $slideEl = $('#results-slide');
+                var $listEl = $('#results-list');
+
+                if (!state) {
+                    $listEl.hide();
+                    self.slick.create(self, $slideEl);
+                } else {
+                    $slideEl.hide();
+                    $listEl.show();
+                    self.slick.destroy($slideEl);
+                }
+
+                state = !state;
+            })
 
         },
 
@@ -125,26 +139,23 @@ $(function() {
             callApi: function(self, totesStr) {
 
                 var json = $.getJSON(totesStr)
-                    .done(function(res) {
-                        var  events = res.events;
-                        if (events.length > 0) {
-                            self.eb.buildHtml(self, events);
-                        } else {
-                            $('section').html('<div id="nodata"><p>Sorry, but we couln\'t find any events around you. Try searching with different options to see if it\'s us your you. <br /> ;-)</p><a class="inspirebtn btn" href="#">Try Again</a></div>');
-                            // display no events found message
-                        }
+                    .done(function(data) {;
+                        self.eb.buildHtml(self, data);
                     })
                     .fail(function(err) {
                         console.log('there was a prob, bob. ' + err);
                     });
             },
 
-            buildHtml: function (self, events) {
+            buildHtml: function (self, data) {
+
                 var htmlArr = [];
                 var tmpHtml = '';
-                var name, desc, logoUrl, start, end, eventUrl;
+                var name, desc, logoUrl, start, end, eventUrl, total;
 
-                $.each(events, function(i, v) {
+                total = data.pagination.object_count;
+
+                $.each(data.events, function(i, v) {
                     try {
                         name = v.name.text;
                         desc = v.description.text;
@@ -153,20 +164,54 @@ $(function() {
                         eventUrl = v.url;
                         logoUrl = v.logo.url;
 
-                        if (name && name && start && end && eventUrl && logoUrl) {
-                            tmpHtml = '<li><div class="ev-wrapper"><h3>' + name + '</h3><img src="' + logoUrl + '" /><ul><li>Start: ' + start + '</li> <li>End: ' + end + '</li></ul><p>' + desc + '</p></div></li>';
+
+                        if (desc.length > 256) {
+                            desc = desc.slice(0, 250) + '...';
+                        }
+                        if (name && name && start && end && eventUrl && logoUrl && total) {
+                            tmpHtml = '<li><div class="ev-wrapper"><h3>' + name + '</h3><img src="' + logoUrl + '" /><ul><li>Starts: ' + start + '</li> <li>Ends: ' + end + '</li></ul><p>' + desc + ' <br /> <br /><a href="' + eventUrl + '" target="_blank">Find out more <i class="fa fa-caret-right"></i></a></p></div></li>';
                             htmlArr.push(tmpHtml);
                         }
                     } catch (err){}
                 });
 
                 htmlArr = htmlArr.join(' ');
-                self.eb.renderHtml(self, htmlArr);
+                self.eb.renderHtml(self, htmlArr, total);
 
             },
 
-            renderHtml: function (self, html) {
-                $('section').html('<ul>' + html + '</ul>')
+            renderHtml: function (self, html, total) {
+                var $renderEl = $('#results-wrapper');
+                var totesStr = (total === 1) ? ' show' : ' shows';
+
+                $('h2', $renderEl).text('We found ' + total + totesStr);
+                $('#results-list').html(html).show();
+                $('#results-slide').html(html);
+                $renderEl.show();
+            }
+        },
+        slick: {
+            create: function (self, $el) {
+                var options = {
+                    autoplay: true,
+                    autoplaySpeed: 4000,
+                    slidesToShow: 1,
+                    arrows: false,
+                    centerPadding: '40px',
+                    dots: true,
+                    fade: true,
+                    mobileFirst: true,
+                    pauseOnDotsHover: true,
+                    lazyLoad: 'progressive',
+                    adaptiveHeight: true,
+                    respondTo: 'min'
+                };
+
+                $el.slick(options);
+                $el.slideDown(300)
+            },
+            destroy: function ($el) {
+                $el.slick('unslick');
             }
         },
         loader: {

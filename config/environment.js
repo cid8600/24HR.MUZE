@@ -20,12 +20,12 @@ module.exports = function(environment) {
     // config/environment.js
     contentSecurityPolicy: {
       'default-src': "'none'",
-      'script-src': "'self' 'unsafe-eval' 'unsafe-inline' liveReloadPort https://cdnjs.cloudflare.com/ https://ajax.googleapis.com/", // Allow scripts from https://cdn.mxpnl.com
-      'font-src': "'self' http://fonts.gstatic.com http://maxcdn.bootstrapcdn.com/", // Allow fonts to be loaded from http://fonts.gstatic.com
+      'script-src': "'self' 'unsafe-eval' 'unsafe-inline' liveReloadPort https://cdnjs.cloudflare.com/ https://ajax.googleapis.com/ https://cdnjs.cloudflare.com/", // Allow scripts from https://cdn.mxpnl.com
+      'font-src': "'self' http://fonts.gstatic.com http://maxcdn.bootstrapcdn.com/ https://cdnjs.cloudflare.com/", // Allow fonts to be loaded from http://fonts.gstatic.com
       'connect-src': "'self' liveReloadPort https://api.github.com/ https://www.eventbriteapi.com/", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
-      'img-src': "'self' https://raw.githubusercontent.com/ https://www.dropbox.com/ http://www.chrisdonham.com/ data:",
-      'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com http://maxcdn.bootstrapcdn.com/", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
-      'media-src': "'self' data:"
+      'img-src': "'self' https://img.evbuc.com/ https://raw.githubusercontent.com/ https://www.dropbox.com/ http://www.chrisdonham.com/ https://cdnjs.cloudflare.com/ data:",
+      'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com http://maxcdn.bootstrapcdn.com/ https://cdnjs.cloudflare.com/", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
+      'media-src': "'self' data: https://cdnjs.cloudflare.com/"
     }
   };
 
