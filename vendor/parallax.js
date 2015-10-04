@@ -10,6 +10,10 @@ $(function() {
 
   $(window).on('scroll', $.throttle(parallax, 50));
 
+  setTimeout(function() {
+    $(window).trigger('scroll');
+  }, 100);
+
   function parallax() {
     function _par() {
       var plxBackground = $("#js-parallax-background");

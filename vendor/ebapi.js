@@ -159,8 +159,8 @@ $(function() {
                     try {
                         name = v.name.text;
                         desc = v.description.text;
-                        start = v.start.utc;
-                        end = v.end.utc;
+                        start = moment(v.start.utc).format("dddd, MMMM Do YYYY, h:mm:ss a");
+                        end = moment(v.end.utc).format("dddd, MMMM Do YYYY, h:mm:ss a");
                         eventUrl = v.url;
                         logoUrl = v.logo.url;
 
@@ -168,8 +168,9 @@ $(function() {
                         if (desc.length > 256) {
                             desc = desc.slice(0, 250) + '...';
                         }
+
                         if (name && name && start && end && eventUrl && logoUrl && total) {
-                            tmpHtml = '<li><div class="ev-wrapper"><h3>' + name + '</h3><img src="' + logoUrl + '" /><ul><li>Starts: ' + start + '</li> <li>Ends: ' + end + '</li></ul><p>' + desc + ' <br /> <br /><a href="' + eventUrl + '" target="_blank">Find out more <i class="fa fa-caret-right"></i></a></p></div></li>';
+                            tmpHtml = '<li><div class="ev-wrapper"><h4>' + name + '</h4><img src="' + logoUrl + '" /><ul><li>Starts <span>' + start + '</span></li> <li>Ends <span>' + end + '</span></li></ul><p>' + desc + ' <br /> <br /><a href="' + eventUrl + '" target="_blank" class="btn clickthrough">Find out more <i class="fa fa-caret-right"></i></a></p></div></li>';
                             htmlArr.push(tmpHtml);
                         }
                     } catch (err){}
@@ -184,7 +185,7 @@ $(function() {
                 var $renderEl = $('#results-wrapper');
                 var totesStr = (total === 1) ? ' show' : ' shows';
 
-                $('h2', $renderEl).text('We found ' + total + totesStr);
+                $('h3', $renderEl).text('We found ' + total + totesStr);
                 $('#results-list').html(html).show();
                 $('#results-slide').html(html);
                 $renderEl.show();

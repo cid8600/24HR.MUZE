@@ -1,0 +1,14 @@
+@media (min-width: 320px) and (max-width: 767px) {
+    #descritption-wrapper {
+        display: none;
+    }
+
+    #submit-wrapper {
+        width: 100%;
+
+        h1 {
+            text-align: center;
+            display: block;
+        }
+    }
+}

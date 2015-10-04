@@ -45,6 +45,12 @@
     padding-bottom: 2em;
 }
 
+#submit-wrapper {
+    h1 {
+        display: none;
+    }
+}
+
 body {
     background-color: $dkerblue;
 
@@ -65,10 +71,16 @@ body {
         font-size: 1.6rem;
     }
 
+    a {
+        &:active {
+            color: #fff;
+        }
+    }
+
     p {
         color: #fff;
         text-align: left;
-        line-heigt: 1.4;
+        line-height: 1.4;
     }
 }
 
@@ -94,12 +106,6 @@ section {
         @include span-columns(12);
         min-height: 0;
     }
-}
-
-#results-wrapper,
-#results-slide,
-#results-list {
-    display: none;
 }
 
 body {
@@ -134,5 +140,7 @@ pre {
 
 @import "header";
 @import "btn";
+@import "results";
 @import "nameform";
+@import "responsive";
 @import "footer";
