@@ -31,10 +31,13 @@
 
     &.inspirebtn {
         display: none;
+        margin-top: 20px;
     }
 
     &.getlocationbtn {
-        padding: 20px 40px;
+        padding: 20px 0;
+        width: 100%;
+        max-width: 400px;
     }
 
     &.clickthrough {
