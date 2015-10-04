@@ -1,61 +1,70 @@
-
 $(function() {
+    'use strict';
 
-    $('body').on('click', '.getlocationbtn', function(e) {
-        var $btnEl = $(e.currentTarget);
-        if ($btnEl.hasClass('disabled')) {
-            return;
-        } else {
-            $btnEl.addClass('disabled');
-            showLoader();
-            getLatLng($btnEl);
+    var geoApp = {
+
+        init: function () {
+            var self = this;
+            self.eventHandlers(self);
+        },
+
+        eventHandlers: function (self) {
+
+            $('body').on('click', '.getlocationbtn', function(e) {
+                var $btnEl = $(e.currentTarget);
+                if ($btnEl.hasClass('disabled')) {
+                    return;
+                } else {
+                    self.loader.showLoader();
+                    self.geo.reqLatLng(self, $btnEl);
+                }
+
+            });
+
+        },
+
+        loader: {
+            showLoader: function () {
+                $('#loading').show();
+            },
+            hideLoader: function () {
+                $('#loading').hide();
+            }
+        },
+
+        geo: {
+            reqLatLng: function (self, $btnEl) {
+
+                var geo_options = {
+                  enableHighAccuracy: true,
+                  maximumAge        : 30000,
+                  timeout           : 27000
+                };
+
+                function geo_success(position) {
+
+                    var geo = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+
+
+                    self.loader.hideLoader();
+                    $btnEl.text('Found You!').delay(600).slideUp(600, function() {
+                        $('.action-container').removeClass('hidden');
+                    });
+                }
+
+                function geo_error() {
+                    $btnEl.removeClass('disabled').text('Try Again');
+                }
+
+                navigator.geolocation.getCurrentPosition(geo_success, geo_error, geo_options);
+            }
         }
-        getLatLng()
-    });
+    };
 
-    function showLoader() {
-        $('#loader').show();
-    }
-    function hideLoader() {
-        $('#loader').hide();
-    }
-
-    function putLatLng($btnEl, geo) {
-        var lat = geo.lat;
-        var lng = geo.lng;
-        // put lat lng in local storage
-        hideLoader();
-        $btnEl.removeClass('disabled');
-    }
-
-    function getLatLng($btnEl) {
-        // get lat lng from local storage
-        // check local before req to speed up after first check
-
-
-        // if (!latLng) {
-            //reqLatLng($btnEl, cb);
-        //}
-
-    }
-
-    function reqLatLng($btnEl, cb) {
-        navigator.geolocation.getCurrentPosition(function (position) {
-            var geo = {
-                lat: position.coords.latitude,
-                lng: position.coords.longitude
-            };
-            console.dir(location);
-            cb(geo);
-        });
-    }
-
-    if (!($(html).hasClass('gelocation'))) {
-        // goelocation not supported
-        // offer some other way to tap the API
-    } else {
-        getLatLng();
-    }
+    geoApp.init();
 
 });
 

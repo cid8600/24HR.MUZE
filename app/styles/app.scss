@@ -11,6 +11,29 @@
     visibility: hidden;
 }
 
+#loading {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: no-repeat center center rgba(0, 0, 0, 0.8);
+    z-index: 2;
+
+    .fa {
+        font-size: 50px;
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        position: absolute;
+        top: 140px;
+        left: 50%;
+        color: #fff;
+        margin-left: -25px;
+    }
+}
+
 section {
     @include outer-container;
     text-align: center;
@@ -139,5 +162,6 @@ section {
 }
 
 @import "header";
+@import "btn";
 @import "nameform";
 @import "footer";

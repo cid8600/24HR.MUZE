@@ -20,12 +20,12 @@ module.exports = function(environment) {
     // config/environment.js
     contentSecurityPolicy: {
       'default-src': "'none'",
-      'script-src': "'self' 'unsafe-eval' 'unsafe-inline' liveReloadPort http://client-solutions.livefyre.com https://ajax.googleapis.com/", // Allow scripts from https://cdn.mxpnl.com
-      'font-src': "'self' http://fonts.gstatic.com", // Allow fonts to be loaded from http://fonts.gstatic.com
+      'script-src': "'self' 'unsafe-eval' 'unsafe-inline' liveReloadPort https://cdnjs.cloudflare.com/ https://ajax.googleapis.com/", // Allow scripts from https://cdn.mxpnl.com
+      'font-src': "'self' http://fonts.gstatic.com http://maxcdn.bootstrapcdn.com/", // Allow fonts to be loaded from http://fonts.gstatic.com
       'connect-src': "'self' liveReloadPort https://api.mixpanel.com https://api.github.com/", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
-      'img-src': "'self'",
-      'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
-      'media-src': "'self'"
+      'img-src': "'self' data: https://raw.githubusercontent.com/",
+      'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com http://maxcdn.bootstrapcdn.com/", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
+      'media-src': "'self' data:"
     }
   };
 

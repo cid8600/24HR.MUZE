@@ -17,6 +17,11 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  app.import('vendor/jquery.debounce.js');
+  app.import('vendor/parallax.js');
+  app.import('vendor/handleajax.js');
+  app.import('vendor/geo.js');
+
 // var broccoli_sass = require('broccoli-sass');
 
   // Use `app.import` to add additional libraries to the generated

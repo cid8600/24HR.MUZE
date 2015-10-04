@@ -8,62 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{content-for 'head'}}
-
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/tf.css">
 
     {{content-for 'head-footer'}}
-    <script src="http://client-solutions.livefyre.com/cid/maps/modernizr-geo.js"></script>
-    <script>
-    // Polly Fill if browser doesn't support geo
-    Modernizr.load({
-        test: Modernizr.geolocation,
-        yep: '',
-        nope: 'http://client-solutions.livefyre.com/cid/maps/geo-polyfill.js'
-    });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   </head>
   <body>
     {{content-for 'body'}}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="assets/vendor.js"></script>
 
     <script src="assets/tf.js"></script>
     <script>
-
-// parallax handler
-$(function() {
-
-  if ($("#js-parallax-window").length) {
-    parallax();
-
-    $(window).scroll(function(e) {
-      parallax();
-    });
-
-  }
-
-
-  function parallax() {
-    if( $("#js-parallax-window").length > 0 ) {
-      var plxBackground = $("#js-parallax-background");
-      var plxWindow = $("#js-parallax-window");
-
-      var plxWindowTopToPageTop = $(plxWindow).offset().top;
-      var windowTopToPageTop = $(window).scrollTop();
-      var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
-
-      var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
-      var windowInnerHeight = window.innerHeight;
-      var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
-      var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
-      var plxSpeed = 0.35;
-
-      plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
-    }
-  }
-
-});
 
     // dropdown handlers
       $(function() {
