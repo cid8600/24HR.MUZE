@@ -23,7 +23,7 @@ module.exports = function(environment) {
       'script-src': "'self' 'unsafe-eval' 'unsafe-inline' liveReloadPort https://cdnjs.cloudflare.com/ https://ajax.googleapis.com/", // Allow scripts from https://cdn.mxpnl.com
       'font-src': "'self' http://fonts.gstatic.com http://maxcdn.bootstrapcdn.com/", // Allow fonts to be loaded from http://fonts.gstatic.com
       'connect-src': "'self' liveReloadPort https://api.mixpanel.com https://api.github.com/", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
-      'img-src': "'self' data: https://raw.githubusercontent.com/",
+      'img-src': "'self' data: https://raw.githubusercontent.com/ https://www.dropbox.com/ http://www.chrisdonham.com/",
       'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com http://maxcdn.bootstrapcdn.com/", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
       'media-src': "'self' data:"
     }

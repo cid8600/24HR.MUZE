@@ -17,6 +17,7 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  app.import('vendor/jquery.backstretch.min.js');
   app.import('vendor/jquery.debounce.js');
   app.import('vendor/parallax.js');
   app.import('vendor/handleajax.js');

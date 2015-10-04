@@ -34,6 +34,27 @@
     }
 }
 
+#descritption-wrapper,
+#submit-wrapper {
+    @include span-columns(6);
+    height: 20em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 2em;
+}
+
+body {
+    h1 {
+        color: #fff;
+        text-align: left;
+    }
+
+    p {
+        color: #fff;
+        text-align: left;
+    }
+}
+
 section {
     @include outer-container;
     text-align: center;
@@ -41,10 +62,6 @@ section {
     padding-top: 2em;
     padding-right: 2em;
     padding-left: 2em;
-
-    & > code, code.block {
-        display: block;
-    }
 
     div {
         height: $body-line-height * 4;
