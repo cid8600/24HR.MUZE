@@ -48,6 +48,8 @@ $(function() {
                         lng: position.coords.longitude
                     };
 
+                    $('html').data('lat', geo.lat);
+                    $('html').data('lng', geo.lng);
 
                     self.loader.hideLoader();
                     $btnEl.text('Found You!').delay(600).slideUp(600, function() {

@@ -17,11 +17,13 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  app.import('bower_components/moment/min/moment-with-locales.min.js');
   app.import('vendor/jquery.backstretch.min.js');
   app.import('vendor/jquery.debounce.js');
   app.import('vendor/parallax.js');
   app.import('vendor/handleajax.js');
   app.import('vendor/geo.js');
+  app.import('vendor/ebapi.js');
 
 // var broccoli_sass = require('broccoli-sass');
 

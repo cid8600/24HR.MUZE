@@ -1,0 +1,154 @@
+{
+    "pagination": {
+        "object_count": 3, 
+        "page_number": 1, 
+        "page_size": 50, 
+        "page_count": 1
+    }, 
+    "events": [
+        {
+            "name": {
+                "text": "Ableton Introduction Class", 
+                "html": "Ableton Introduction Class"
+            }, 
+            "description": {
+                "text": "Learn how to make a track from Start to Finish in Ableton.\u00a0 \nClass meeting Dates:\u00a0 \nSunday - Oct 4th - 10am-2pm \nSunday - Oct 11th - 10am-2pm \nSunday - Oct 18th - 10am-2pm \nSunday - Oct 25th - 10am-2pm \n Day 1: Creating Beats \n Part 1: Session View, MIDI and Creation Phase\u00a0 Activity: Create your first drum beat! The Music Production Process Interface and Navigation Tour Drum Programming, Drum Racks and creating groove MIDI editing, recording and overdubbing  Part 2: Bass Lines and Chords\u00a0 Lives Instruments MIDI Effects\u00a0 Writing Techniques Packs and Help Files Activity: Write a bass line and chord progression!  Day 2: Session View - Working with Audio, Loops and Samples\u00a0  Activity: Manipulate loops and samples Working with Loops, Samples & Warping Convert Harmony, Melody and Drums to MIDI Creative Sampling with Slice to New MIDI  Day 3: Moving into the Arrangement  Part 1: Arrangement View and refining your song\u00a0 Activity: Perform your song into the arrangement. MIDI Controllers Clip and scene launching Session View Automation & Clip Envelopes  Part 2: Arrangement View Editing Functions (2 Hours) Activity: Refine the song in the arrangement view Arrangement functions Audio, MIDI and Clip Editing Automation Audio Effect and Instrument Racks  Day 4: Mixing and Mastering  Activity: Polish your Mix and Make it Loud! The Essential Elements of Mixing EQ and Compression Reverb and Delay Insert FX vs Send and Return FX Basics of Mastering Rendering and Output ", 
+                "html": "<P><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Learn how to make a track from Start to Finish in Ableton.\u00a0<\/SPAN><\/P>\r\n<P>Class meeting Dates:\u00a0<\/P>\r\n<P>Sunday - Oct 4th - 10am-2pm<\/P>\r\n<P><SPAN STYLE=\"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20.7999992370605px;\">Sunday - Oct 11th - 10am-2pm<\/SPAN><\/P>\r\n<P><SPAN STYLE=\"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20.7999992370605px;\"><SPAN STYLE=\"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20.7999992370605px;\">Sunday - Oct 18th - 10am-2pm<\/SPAN><\/SPAN><\/P>\r\n<P><SPAN STYLE=\"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20.7999992370605px;\"><SPAN STYLE=\"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20.7999992370605px;\">Sunday - Oct 25th - 10am-2pm<\/SPAN><\/SPAN><\/P>\r\n<P><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><STRONG><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Day 1: Creating Beats<\/SPAN><\/STRONG><\/P>\r\n<P><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Part 1: Session View, MIDI and Creation Phase\u00a0<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Activity: Create your first drum beat!<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">The Music Production Process<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Interface and Navigation Tour<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Drum Programming, Drum Racks and creating groove<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">MIDI editing, recording and overdubbing<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><STRONG><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Part 2: Bass Lines and Chords\u00a0<\/SPAN><\/STRONG><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Lives Instruments<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">MIDI Effects\u00a0<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Writing Techniques<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Packs and Help Files<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Activity: Write a bass line and chord progression!<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><STRONG><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Day 2: Session View - Working with Audio, Loops and Samples\u00a0<\/SPAN><\/STRONG><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Activity: Manipulate loops and samples<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Working with Loops, Samples &amp; Warping<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Convert Harmony, Melody and Drums to MIDI<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Creative Sampling with Slice to New MIDI<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><STRONG><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Day 3: Moving into the Arrangement<\/SPAN><\/STRONG><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Part 1: Arrangement View and refining your song\u00a0<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Activity: Perform your song into the arrangement.<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">MIDI Controllers<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Clip and scene launching<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Session View Automation &amp; Clip Envelopes<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Part 2: Arrangement View Editing Functions (2 Hours)<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Activity: Refine the song in the arrangement view<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Arrangement functions Audio, MIDI and Clip Editing<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Automation<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Audio Effect and Instrument Racks<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><STRONG><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Day 4: Mixing and Mastering<\/SPAN><\/STRONG><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Activity: Polish your Mix and Make it Loud!<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">The Essential Elements of Mixing<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">EQ and Compression<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Reverb and Delay<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Insert FX vs Send and Return FX<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Basics of Mastering<\/SPAN><BR STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\"><SPAN STYLE=\"color: #777777; font-family: Helvetica, Arial, sans-serif; font-size: 12px;\">Rendering and Output<\/SPAN><\/P>"
+            }, 
+            "id": "18420545347", 
+            "url": "http://www.eventbrite.com/e/ableton-introduction-class-tickets-18420545347?aff=ebapi", 
+            "start": {
+                "timezone": "America/Los_Angeles", 
+                "local": "2015-10-04T10:00:00", 
+                "utc": "2015-10-04T17:00:00Z"
+            }, 
+            "end": {
+                "timezone": "America/Los_Angeles", 
+                "local": "2015-10-25T14:00:00", 
+                "utc": "2015-10-25T21:00:00Z"
+            }, 
+            "created": "2015-09-01T18:14:37Z", 
+            "changed": "2015-09-18T16:35:05Z", 
+            "capacity": 13, 
+            "status": "live", 
+            "currency": "USD", 
+            "listed": true, 
+            "shareable": true, 
+            "online_event": false, 
+            "tx_time_limit": 480, 
+            "hide_start_date": false, 
+            "logo_id": "15191936", 
+            "organizer_id": "8333211995", 
+            "venue_id": "11340620", 
+            "category_id": "103", 
+            "subcategory_id": "3006", 
+            "format_id": "9", 
+            "resource_uri": "https://www.eventbriteapi.com/v3/events/18420545347/", 
+            "logo": {
+                "id": "15191936", 
+                "url": "https://img.evbuc.com/https%3A%2F%2Fimg.evbuc.com%2Fhttp%253A%252F%252Fcdn.evbuc.com%252Fimages%252F15191936%252F148206267245%252F1%252Foriginal.jpg%3Frect%3D111%252C0%252C1006%252C503%26s%3D636f54c452a0e1df9f57c317b4861ba7?h=200&w=450&s=e8bfd44a8d51db5f7925c961b15cddf2", 
+                "aspect_ratio": "2", 
+                "edge_color": "#e3dcd3", 
+                "edge_color_set": true
+            }
+        }, 
+        {
+            "name": {
+                "text": "Back To School Party - Bay", 
+                "html": "Back To School Party - Bay"
+            }, 
+            "description": {
+                "text": "JOIN US FOR THE BIGGEST BACK TO SCHOOL PARTY OF THE YEAY \nThis is a Back to School Party You Don\u2019t Want to Miss \n$250 Dance Contest \n \n  \n  \nMusic By: Celebrity DJ: \nHost BY Hip Hop Artist: TBA \n  \n \nLive Performance By Hip Hop Artist: YG \n     \nProduced by: \nOneMedia Concert \nonemedialive.com \nFor Tickets or more information call 855-419-4445. Ext 500 ", 
+                "html": "<P STYLE=\"text-align: center;\" ALIGN=\"center\"><SPAN STYLE=\"font-size: 20pt; font-family: 'Agency FB', sans-serif;\">JOIN US FOR THE BIGGEST BACK TO SCHOOL PARTY OF THE YEAY<\/SPAN><\/P>\r\n<P STYLE=\"text-align: center;\" ALIGN=\"center\"><SPAN><SPAN STYLE=\"font-size: 20pt; font-family: 'Agency FB', sans-serif;\">This is a Back to School Party You Don\u2019t Want to Miss<\/SPAN><\/SPAN><\/P>\r\n<P STYLE=\"text-align: center;\" ALIGN=\"center\"><SPAN><SPAN STYLE=\"font-size: 20pt; font-family: 'Agency FB', sans-serif;\">$250 Dance Contest<\/SPAN><\/SPAN><\/P>\r\n<P STYLE=\"text-align: center;\" ALIGN=\"center\"><SPAN><SPAN STYLE=\"font-size: 20pt; font-family: 'Agency FB', sans-serif;\"><IMG SRC=\"https://cdn.evbuc.com/eventlogos/150380425/threepartygirls.jpg\" ALT=\"\" WIDTH=\"440\" HEIGHT=\"300\"><\/SPAN><\/SPAN><\/P>\r\n<P><SPAN STYLE=\"font-size: 18.0pt; font-family: 'Agency FB',sans-serif;\"><BR><\/SPAN><\/P>\r\n<P><SPAN STYLE=\"font-size: 18.0pt; font-family: 'Agency FB',sans-serif;\"><BR><\/SPAN><\/P>\r\n<P><SPAN STYLE=\"font-size: 18.0pt; font-family: 'Agency FB',sans-serif;\">Music By: Celebrity DJ:<\/SPAN><\/P>\r\n<P><SPAN><SPAN STYLE=\"font-size: 18.0pt; font-family: 'Agency FB',sans-serif;\">Host BY Hip Hop Artist: TBA<\/SPAN><\/SPAN><\/P>\r\n<P><SPAN><SPAN STYLE=\"font-size: 18.0pt; font-family: 'Agency FB',sans-serif;\"><BR><\/SPAN><\/SPAN><\/P>\r\n<P><SPAN><SPAN STYLE=\"font-size: 18.0pt; font-family: 'Agency FB',sans-serif;\"><IMG SRC=\"https://cdn.evbuc.com/eventlogos/150380425/screenshot20140123at11.55.40am620x350.png\" ALT=\"\" WIDTH=\"443\" HEIGHT=\"250\"><\/SPAN><\/SPAN><\/P>\r\n<P><SPAN><SPAN STYLE=\"font-size: 18.0pt; font-family: 'Agency FB',sans-serif;\">Live Performance By Hip Hop Artist: YG<\/SPAN><\/SPAN><\/P>\r\n<P><SPAN><SPAN STYLE=\"font-size: 18.0pt; font-family: 'Agency FB',sans-serif;\"><BR> <BR> <\/SPAN><\/SPAN><\/P>\r\n<P><SPAN><SPAN STYLE=\"font-size: 18.0pt; font-family: 'Agency FB',sans-serif;\">Produced by:<\/SPAN><\/SPAN><\/P>\r\n<P><SPAN><SPAN STYLE=\"font-size: 18.0pt; font-family: 'Agency FB',sans-serif;\">OneMedia Concert<\/SPAN><\/SPAN><\/P>\r\n<P><SPAN><SPAN STYLE=\"font-size: 18.0pt; font-family: 'Agency FB',sans-serif;\">onemedialive.com<\/SPAN><\/SPAN><\/P>\r\n<P><SPAN><SPAN STYLE=\"font-size: 18.0pt; font-family: 'Agency FB',sans-serif;\">For Tickets or more information call 855-419-4445. Ext 500<\/SPAN><\/SPAN><\/P>"
+            }, 
+            "id": "18491207700", 
+            "url": "http://www.eventbrite.com/e/back-to-school-party-bay-tickets-18491207700?aff=ebapi", 
+            "start": {
+                "timezone": "America/Los_Angeles", 
+                "local": "2015-10-03T19:00:00", 
+                "utc": "2015-10-04T02:00:00Z"
+            }, 
+            "end": {
+                "timezone": "America/Los_Angeles", 
+                "local": "2015-10-04T12:30:00", 
+                "utc": "2015-10-04T19:30:00Z"
+            }, 
+            "created": "2015-09-06T19:50:51Z", 
+            "changed": "2015-10-04T03:35:31Z", 
+            "capacity": 1200, 
+            "status": "started", 
+            "currency": "USD", 
+            "listed": true, 
+            "shareable": true, 
+            "online_event": false, 
+            "tx_time_limit": 480, 
+            "hide_start_date": false, 
+            "logo_id": "15295162", 
+            "organizer_id": "8433546454", 
+            "venue_id": "11384830", 
+            "category_id": "103", 
+            "subcategory_id": "3008", 
+            "format_id": "11", 
+            "resource_uri": "https://www.eventbriteapi.com/v3/events/18491207700/", 
+            "logo": {
+                "id": "15295162", 
+                "url": "https://img.evbuc.com/https%3A%2F%2Fimg.evbuc.com%2Fhttp%253A%252F%252Fcdn.evbuc.com%252Fimages%252F15295162%252F151433087975%252F1%252Foriginal.jpg%3Frect%3D0%252C225%252C2100%252C1050%26s%3D2e8fb38a09a9b41c769171cf7ead4dd5?h=200&w=450&s=d0d636ad1a229d6e109d0c8b85b63f5a", 
+                "aspect_ratio": "2", 
+                "edge_color": "#c4996c", 
+                "edge_color_set": true
+            }
+        }, 
+        {
+            "name": {
+                "text": "PMS", 
+                "html": "PMS"
+            }, 
+            "description": {
+                "text": "We wanted to create the perfect container in which to house the vast San Francisco Evolution spectrum. We started out as Club Kids, ran amuck as Party Monsters and eventually found ourselves as Burners. We realized that even if we are slowly trading in our End Up mornings for yoga, and our happy hours for meditation, there is still that last bit of bitchy Club Kid PMS (which strikes each and every gender alike) begging to be itched.     OUR CLUB KID DJ GUESTS:    Dulce Vita   Kimba Rose  Exoendo  Trever Pearson  Tuff Break  Spinning the choiciest most eye dilatin' house, breaks, techno and additional surprises this side of the desert. \n     \nC\u2019mere honey, and let us pour some love balm and music salve on those tense emotions and frustrated nerves!!! Guys and dolls alike: we will LOVE you up HARD with some booty bumpin, costume wearin, stress stompin vibrations and feel good awesomeness!!     We hold all aspects of our various lifestyles, and welcome all. We will be featuring a Detox/Retox bar, with on the spot, freshly made, organic green juice elixirs, which can be had on their own or matched with our traditional and signature cocktails.     We pride ourselves on our exquisite musical taste and offerings, beautiful energy and paradise atmosphere. We invite you to mark your calendars, and remember to save up all those frustrations, symptoms and cravings for first Sundays\u2019 PMS!!!     Channel that shit into your costume, your energy for the dance floor and come transform it into PURE LOVE!!! ", 
+                "html": "<P><SPAN>We wanted to create the perfect container in which to house the vast San Francisco Evolution spectrum. We started out as Club Kids, ran amuck as Party Monsters and eventually found ourselves as Burners. We realized that even if we are slowly trading in our End Up mornings for yoga, and our happy hours for meditation, there is still that last bit of bitchy Club Kid PMS (which strikes each and every gender alike) begging to be itched. <BR> <BR> OUR CLUB KID DJ GUESTS:<BR> <BR> <A HREF=\"https://www.facebook.com/DulceVita\" DATA-HOVERCARD=\"/ajax/hovercard/user.php?id=606418687&extragetparams=%7B%22directed_target_id%22%3A0%7D\" REL=\"nofollow\">Dulce Vita<\/A> <BR> <A HREF=\"https://www.facebook.com/kimbarosedj\" DATA-HOVERCARD=\"/ajax/hovercard/user.php?id=642943326&extragetparams=%7B%22directed_target_id%22%3A0%7D\" REL=\"nofollow\">Kimba Rose<\/A><BR> Exoendo<BR> <A HREF=\"https://www.facebook.com/trever.pearson.3\" DATA-HOVERCARD=\"/ajax/hovercard/user.php?id=599314898&extragetparams=%7B%22directed_target_id%22%3A0%7D\" REL=\"nofollow\">Trever Pearson<\/A><BR> <A HREF=\"https://www.facebook.com/rosanna.mcguire\" DATA-HOVERCARD=\"/ajax/hovercard/user.php?id=575708341&extragetparams=%7B%22directed_target_id%22%3A0%7D\" REL=\"nofollow\">Tuff Break<\/A><BR> Spinning<SPAN> the choiciest most eye dilatin' house, breaks, techno and additional surprises this side of the desert.<\/SPAN><\/SPAN><\/P>\r\n<P><SPAN><SPAN><BR> <IMG SRC=\"https://cdn.evbuc.com/eventlogos/119697029/2015pmspartyfb.jpg\" ALT=\"PMS flyer\"><BR> <\/SPAN><\/SPAN><\/P>\r\n<P><SPAN><SPAN>C\u2019mere honey, and let us pour some love balm and music salve on those tense emotions and frustrated nerves!!! Guys and dolls alike: we will LOVE you up HARD with some booty bumpin, costume wearin, stress stompin vibrations and feel good awesomeness!! <BR> <BR> We hold all aspects of our various lifestyles, and welcome all. We will be featuring a Detox/Retox bar, with on the spot, freshly made, organic green juice elixirs, which can be had on their own or matched with our traditional and signature cocktails. <BR> <BR> We pride ourselves on our exquisite musical taste and offerings, beautiful energy and paradise atmosphere. We invite you to mark your calendars, and remember to save up all those frustrations, symptoms and cravings for first Sundays\u2019 PMS!!! <BR> <BR> Channel that shit into your costume, your energy for the dance floor and come transform it into PURE LOVE!!!<\/SPAN><\/SPAN><\/P>"
+            }, 
+            "id": "16604093290", 
+            "url": "http://www.eventbrite.com/e/pms-tickets-16604093290?aff=ebapi", 
+            "start": {
+                "timezone": "America/Los_Angeles", 
+                "local": "2015-10-04T12:00:00", 
+                "utc": "2015-10-04T19:00:00Z"
+            }, 
+            "end": {
+                "timezone": "America/Los_Angeles", 
+                "local": "2015-10-04T18:00:00", 
+                "utc": "2015-10-05T01:00:00Z"
+            }, 
+            "created": "2015-04-15T20:22:05Z", 
+            "changed": "2015-05-03T23:32:44Z", 
+            "capacity": 300, 
+            "status": "live", 
+            "currency": "USD", 
+            "listed": true, 
+            "shareable": true, 
+            "online_event": false, 
+            "tx_time_limit": 480, 
+            "hide_start_date": false, 
+            "logo_id": "12965865", 
+            "organizer_id": "8100050208", 
+            "venue_id": "10292731", 
+            "category_id": "103", 
+            "subcategory_id": "3007", 
+            "format_id": "11", 
+            "resource_uri": "https://www.eventbriteapi.com/v3/events/16604093290/", 
+            "series_id": "16604087272", 
+            "logo": {
+                "id": "12965865", 
+                "url": "https://img.evbuc.com/http%3A%2F%2Fcdn.evbuc.com%2Fimages%2F12965865%2F120534908203%2F1%2Foriginal.jpg?h=200&w=450&s=4e8f4741eb20f5e324d8c6210f46a9c9", 
+                "aspect_ratio": "2.710843373493975903614457831", 
+                "edge_color": "#735e54", 
+                "edge_color_set": true
+            }
+        }
+    ], 
+    "location": {
+        "latitude": "37.786279", 
+        "within": "16.0934400061", 
+        "longitude": "-122.391429"
+    }
+}
