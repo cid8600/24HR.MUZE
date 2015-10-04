@@ -47,9 +47,6 @@ $(function() {
             // make API call
             $('body').on('click', '.inspirebtn', function (e) {
                 self.eb.buildStr(self);
-              // use momemnt to get start-date = new Date()
-            // use momemnt to calc end-date = (start-date + 24hr)
-              // build string for API Call
               // handle resp (if no items, display message)
               // build html
               // render to dom
@@ -90,7 +87,7 @@ $(function() {
                 tom = tom.format();
                 tom = tom.slice(0, 19);
                 str = 'start_date.range_start=' + tod + '&start_date.range_end=' + tom;
-                console.log(tod, tom, str);
+
                 return str;
 
             },
@@ -126,11 +123,50 @@ $(function() {
             },
 
             callApi: function(self, totesStr) {
-                console.log(totesStr);
+
+                var json = $.getJSON(totesStr)
+                    .done(function(res) {
+                        var  events = res.events;
+                        if (events.length > 0) {
+                            self.eb.buildHtml(self, events);
+                        } else {
+                            $('section').html('<div id="nodata"><p>Sorry, but we couln\'t find any events around you. Try searching with different options to see if it\'s us your you. <br /> ;-)</p><a class="inspirebtn btn" href="#">Try Again</a></div>');
+                            // display no events found message
+                        }
+                    })
+                    .fail(function(err) {
+                        console.log('there was a prob, bob. ' + err);
+                    });
             },
 
-            buildHtml: function () {
+            buildHtml: function (self, events) {
+                var htmlArr = [];
+                var tmpHtml = '';
+                var name, desc, logoUrl, start, end, eventUrl;
 
+                $.each(events, function(i, v) {
+                    try {
+                        name = v.name.text;
+                        desc = v.description.text;
+                        start = v.start.utc;
+                        end = v.end.utc;
+                        eventUrl = v.url;
+                        logoUrl = v.logo.url;
+
+                        if (name && name && start && end && eventUrl && logoUrl) {
+                            tmpHtml = '<li><div class="ev-wrapper"><h3>' + name + '</h3><img src="' + logoUrl + '" /><ul><li>Start: ' + start + '</li> <li>End: ' + end + '</li></ul><p>' + desc + '</p></div></li>';
+                            htmlArr.push(tmpHtml);
+                        }
+                    } catch (err){}
+                });
+
+                htmlArr = htmlArr.join(' ');
+                self.eb.renderHtml(self, htmlArr);
+
+            },
+
+            renderHtml: function (self, html) {
+                $('section').html('<ul>' + html + '</ul>')
             }
         },
         loader: {

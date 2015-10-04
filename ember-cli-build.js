@@ -16,8 +16,8 @@ module.exports = function(defaults) {
     }
     // Add options here
   });
-
   app.import('bower_components/moment/min/moment-with-locales.min.js');
+  app.import('bower_components/slick-carousel/slick/slick.min.js');
   app.import('vendor/jquery.backstretch.min.js');
   app.import('vendor/jquery.debounce.js');
   app.import('vendor/parallax.js');

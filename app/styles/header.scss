@@ -10,28 +10,4 @@ header {
         text-decoration: none;
         .fa {}
     }
-
-    h1 {
-        color: #fff;
-        font-family: "helvetica Neue", "Helvetica", sans-serif;
-        font-weight: 100;
-        line-height: $body-line-height;
-    }
-
-    .source {
-        @include inline-block;
-        background-color: white;
-        border-radius: 3px;
-        color: $dkerblue;
-        font-size: em(14);
-        font-weight: bold;
-        margin-right: .5em;
-        margin-top: .5em;
-        padding: .5em 1em;
-        text-decoration: none;
-
-        &:hover {
-            background-color: rgba(white, 0.7);
-        }
-    }
 }

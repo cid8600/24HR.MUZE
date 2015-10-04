@@ -34,8 +34,7 @@ $(function() {
         set = true;
         _par();
          $('.parallax-background').backstretch([
-              "http://chrisdonham.com/venues/1.jpg"
-            , "http://chrisdonham.com/venues/2.jpg"
+              "http://chrisdonham.com/venues/2.jpg"
             , "http://chrisdonham.com/venues/3.jpg"
             , "http://chrisdonham.com/venues/4.jpg"
             , "http://chrisdonham.com/venues/5.jpg"
