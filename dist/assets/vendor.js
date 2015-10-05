@@ -86977,15 +86977,29 @@ $(function() {
         },
 
         validateSelects: function () {
-              var $selectsEls = $('.dropdown-button');
-              var valid = false;
-              $selectsEls.each(function(i, v) {
-                if ($(this).text() === 'Select') {
-                  valid = false;
-                } else {
-                  valid = true;
-                }
-              });
+            var $selectsEls = $('.dropdown-button');
+            var valid = false;
+            var validArr =[]
+
+            $selectsEls.each(function(v) {
+                validArr.push($(this).text());
+            });
+
+            $.each(validArr, function(i, v) {
+            if (v === 'Select') {
+                valid = false;
+            } else {
+                valid = true;
+            }
+            console.log(v);
+            });
+              // $selectsEls.each(function(i, v) {
+              //   if ($(this).text() === 'Select') {
+              //     valid = false;
+              //   } else {
+              //     valid = true;
+              //   }
+              // });
 
               return valid;
         },
@@ -86993,12 +87007,22 @@ $(function() {
 
             // Dropdowns
             $('body').on('click', '.dropdown-button', function(e) {
-              var $button, $menu;
+              var $button, $menu, $parent, $parSibs, $otherMenus;
 
               $button = $(e.currentTarget);
+              $parent = $button.parents('.dropdown');
+              $parSibs = $parent.siblings('.dropdown');
 
               $menu = $button.siblings(".dropdown-menu");
+
               $menu.toggleClass("show-menu");
+              $otherMenus = $parSibs.find('.dropdown-menu');
+              $otherMenus.each(function(i) {
+                if ($(this).hasClass('show-menu')) {
+                    $(this).removeClass('show-menu')
+                }
+              });
+
               $menu.children("li").click(function() {
                 $menu.removeClass("show-menu");
                 $button.html($(this).html());
