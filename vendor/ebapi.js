@@ -186,7 +186,7 @@ $(function() {
 
             renderHtml: function (self, html, total) {
                 var $renderEl = $('#results-wrapper');
-                var totesStr = (total === 1) ? ' show' : ' shows';
+                var totesStr = (total === 1) ? ' event' : ' events';
 
                 $('h3', $renderEl).text('We found ' + total + totesStr);
                 $('#results-list').html(html).show();
