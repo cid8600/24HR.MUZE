@@ -29,6 +29,16 @@ $(function() {
         eventHandlers: function (self) {
 
             // Dropdowns
+            $('body').on('click', function(e) {
+                var $tar = $(e.target);
+                if ($tar.hasClass('dropdown-button')) {
+                    return;
+                } else {
+                    $('.dropdown-menu').removeClass('show-menu')
+                }
+                console.dir($tar);
+            });
+
             $('body').on('click', '.dropdown-button', function(e) {
               var $button, $menu, $parent, $parSibs, $otherMenus;
 
@@ -61,26 +71,9 @@ $(function() {
 
             // make API call
             $('body').on('click', '.inspirebtn', function (e) {
+                $(e.currentTarget).blur();
                 self.eb.buildStr(self);
             });
-
-            // toggle list / slide views
-            $('body').on('click', '#view-toggle', function (e) {
-                var state = false; // list view
-                var $slideEl = $('#results-slide');
-                var $listEl = $('#results-list');
-
-                if (!state) {
-                    $listEl.hide();
-                    self.slick.create(self, $slideEl);
-                } else {
-                    $slideEl.hide();
-                    $listEl.show();
-                    self.slick.destroy($slideEl);
-                }
-
-                state = !state;
-            })
 
         },
 
@@ -202,37 +195,13 @@ $(function() {
             renderHtml: function (self, html, total) {
                 var $renderEl = $('#results-wrapper');
                 var totesStr = (total === 1) ? ' event' : ' events';
-
+                var totesHtml = (total === 0) ? '<img class="nothing"src="http://i.imgur.com/ATlhg.gif" />' : html;
                 $('h3', $renderEl).text('We found ' + total + totesStr);
-                $('#results-list').html(html).show();
-                $('#results-slide').html(html);
+                $('#results-list').html(totesHtml).show();
                 $renderEl.show();
             }
         },
-        slick: {
-            create: function (self, $el) {
-                var options = {
-                    autoplay: true,
-                    autoplaySpeed: 4000,
-                    slidesToShow: 1,
-                    arrows: false,
-                    centerPadding: '40px',
-                    dots: true,
-                    fade: true,
-                    mobileFirst: true,
-                    pauseOnDotsHover: true,
-                    lazyLoad: 'progressive',
-                    adaptiveHeight: true,
-                    respondTo: 'min'
-                };
 
-                $el.slick(options);
-                $el.slideDown(300)
-            },
-            destroy: function ($el) {
-                $el.slick('unslick');
-            }
-        },
         loader: {
             showLoader: function () {
                 $('#loading').show();

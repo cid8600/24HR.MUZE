@@ -16,6 +16,7 @@ $(function() {
                     return;
                 } else {
                     self.loader.showLoader();
+                    $(e.currentTarget).blur();
                     self.geo.reqLatLng(self, $btnEl);
                 }
 
