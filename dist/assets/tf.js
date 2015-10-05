@@ -2024,7 +2024,7 @@ catch(err) {
 if (runningTests) {
   require("tf/tests/test-helper");
 } else {
-  require("tf/app")["default"].create({"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true,"name":"tf","version":"0.0.0+e20c2b10"});
+  require("tf/app")["default"].create({"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true,"name":"tf","version":"0.0.0+6f7bb7c2"});
 }
 
 /* jshint ignore:end */
