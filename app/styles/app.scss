@@ -58,12 +58,13 @@
     }
 
     a {
-        margin-top: 93px;
+        margin-top: 77px;
     }
 }
 
 body {
     background-color: $dkerblue;
+    min-width: 320px;
 
     h1, h2 {
         color: #fff;

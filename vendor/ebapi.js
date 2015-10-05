@@ -153,7 +153,7 @@ $(function() {
                 var tmpHtml = '';
                 var name, desc, logoUrl, start, end, eventUrl, total;
 
-                total = data.pagination.object_count;
+                total = 0;
 
                 $.each(data.events, function(i, v) {
                     try {
@@ -162,18 +162,21 @@ $(function() {
                         start = moment(v.start.utc).format("dddd, MMMM Do YYYY, h:mm:ss a");
                         end = moment(v.end.utc).format("dddd, MMMM Do YYYY, h:mm:ss a");
                         eventUrl = v.url;
-                        logoUrl = v.logo.url;
+                        logoUrl = v.logo.url || 'http://www.chrisdonham.com/venues/no_image_available.png';
 
 
                         if (desc.length > 256) {
-                            desc = desc.slice(0, 250) + '...';
+                            desc = desc.slice(0, 300) + '...';
                         }
 
-                        if (name && name && start && end && eventUrl && logoUrl && total) {
+                        if (name && name && start && end && eventUrl) {
                             tmpHtml = '<li><div class="ev-wrapper"><h4>' + name + '</h4><img src="' + logoUrl + '" /><ul><li>Starts <span>' + start + '</span></li> <li>Ends <span>' + end + '</span></li></ul><p>' + desc + ' <br /> <br /><a href="' + eventUrl + '" target="_blank" class="btn clickthrough">Find out more <i class="fa fa-caret-right"></i></a></p></div></li>';
+                            total += 1;
                             htmlArr.push(tmpHtml);
+
                         }
                     } catch (err){}
+
                 });
 
                 htmlArr = htmlArr.join(' ');

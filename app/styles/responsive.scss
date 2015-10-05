@@ -1,6 +1,18 @@
+@media (min-width: 320px) and (max-width: 479px) {
+    #submit-wrapper {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
     #descritption-wrapper {
         display: none;
+    }
+
+    .parallax-static-content {
+        padding: 5.5em 0;
     }
 
     #submit-wrapper {
@@ -18,12 +30,30 @@
     }
 
     #results-list {
+        h3 {
+            font-size: 1.8rem;
+        }
+
         .ev-wrapper {
             ul {
                 li {
                     font-size: 1.2rem;
                     margin-bottom: 9px;
                 }
+            }
+
+            h4 {
+                font-size: 1.6rem;
+                line-height: 1.2;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .clickthrough {
+                margin-top: 0;
+                margin-bottom: 10px;
             }
         }
     }
