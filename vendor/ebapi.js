@@ -10,7 +10,7 @@ $(function() {
 
         validateSelects: function () {
             var $selectsEls = $('.dropdown-button');
-            var valid = false;
+            var valid = 0;
             var validArr =[]
 
             $selectsEls.each(function(v) {
@@ -18,23 +18,14 @@ $(function() {
             });
 
             $.each(validArr, function(i, v) {
-            if (v === 'Select') {
-                valid = false;
-            } else {
-                valid = true;
-            }
-            console.log(v);
+                if (v !== 'Select') {
+                    valid += 1;
+                }
             });
-              // $selectsEls.each(function(i, v) {
-              //   if ($(this).text() === 'Select') {
-              //     valid = false;
-              //   } else {
-              //     valid = true;
-              //   }
-              // });
 
-              return valid;
+            return (valid === $selectsEls.length) ? true : false;
         },
+
         eventHandlers: function (self) {
 
             // Dropdowns
