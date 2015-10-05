@@ -8,6 +8,9 @@ header {
         font-size: 44px;
         color: rgba(255, 255, 255, 1);
         text-decoration: none;
-        .fa {}
+
+        .fa {
+            text-shadow: 2px 2px 0px #355e98, 4px 4px 0px rgba(0, 0, 0, 0.15);
+        }
     }
 }
