@@ -1,83 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>24HR.MUZE</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Use this App to find local music events that are happening right now! Tell us where you are and we'll tell you 24 hours of events. Customize the options to select distance, paid or free events, and whether or not venue popularity is important to you. As always, keep rawking my little rawkstars!">
-    <meta name="robots" content="index, nofollow">
-    <meta name="author" content="CiD Donham">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="24HR.MUZE">
-    <meta property="og:site_name" content="24HR.MUZE">
-    <meta property="og:url" content="http://ideabucket.net">
-    <meta property="og:description" content="Use this App to find local music events that are happening right now! Tell us where you are and we'll tell you 24 hours of events. Customize the options to select distance, paid or free events, and whether or not venue popularity is important to you. As always, keep rawking my little rawkstars!">
-    <meta property="fb:app_id" content="">
-    <meta property="og:type" content="website">
+<head>
+  <title>24HR.MUZE</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Use this App to find local music events that are happening right now! Tell us where you are and we'll tell you 24 hours of events. Customize the options to select distance, paid or free events, and whether or not venue popularity is important to you. As always, keep rawking my little rawkstars!">
+  <meta name="robots" content="index, nofollow">
+  <meta name="author" content="CiD Donham">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="24HR.MUZE">
+  <meta property="og:site_name" content="24HR.MUZE">
+  <meta property="og:url" content="http://ideabucket.net">
+  <meta property="og:description" content="Use this App to find local music events that are happening right now! Tell us where you are and we'll tell you 24 hours of events. Customize the options to select distance, paid or free events, and whether or not venue popularity is important to you. As always, keep rawking my little rawkstars!">
+  <meta property="fb:app_id" content="">
+  <meta property="og:type" content="website">
 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@CidliusMaximus">
-    <meta name="twitter:title" content="24HR.MUZE">
-    <meta name="twitter:description" content="Use this App to find local music events that are happening right now! Tell us where you are and we'll tell you 24 hours of events. Customize the options to select distance, paid or free events, and whether or not venue popularity is important to you. As always, keep rawking my little rawkstars!">
-    <meta name="twitter:image:src" content="http://www.ideabucket.net/logo_tn.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@CidliusMaximus">
+  <meta name="twitter:title" content="24HR.MUZE">
+  <meta name="twitter:description" content="Use this App to find local music events that are happening right now! Tell us where you are and we'll tell you 24 hours of events. Customize the options to select distance, paid or free events, and whether or not venue popularity is important to you. As always, keep rawking my little rawkstars!">
+  <meta name="twitter:image:src" content="http://www.ideabucket.net/logo_tn.jpg">
 
 
-    {{content-for 'head'}}
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/tf.css">
+  {{content-for 'head'}}
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/vendor.css">
+  <link rel="stylesheet" href="assets/tf.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
-    {{content-for 'head-footer'}}
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  {{content-for 'head-footer'}}
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-68555923-1', 'auto');
-      ga('send', 'pageview');
+    ga('create', 'UA-68555923-1', 'auto');
+    ga('send', 'pageview');
 
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  </head>
-  <body>
-    {{content-for 'body'}}
-    <script src="assets/vendor.js"></script>
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+<body>
+  {{content-for 'body'}}
+  <script src="assets/vendor.js"></script>
 
-    <script src="assets/tf.js"></script>
-    {{content-for 'body-footer'}}
-     <script type="text/x-handlebars" data-template-name="results" id="results">
-<section class="zero">
-  <div id="results-wrapper">
-    <h3>We found {{ model.total }}</h3>
-    <ul id="results-list">
-      {{#each model.evsArr as |ev| }}
-      <li>
-        <div class="ev-wrapper">
-          <h4>{{ ev.name }}</h4>
-          <img src="{{ ev.logoUrl }}" />
-          <ul>
-            <li>Starts <span>{{ ev.start }}</span></li>
-            <li>Ends <span>{{ ev.end }}</span></li>
-          </ul>
-          <p>{{ ev.desc }}
-            <br />
-            <br />
-            <a href="{{ ev.eventUrl }}" target="_blank" class="btn clickthrough">Find out more <i class="fa fa-caret-right"></i></a>
-          </p>
+  <script src="assets/tf.js"></script>
+  {{content-for 'body-footer'}}
+  <script type="text/x-handlebars" data-template-name="results" id="results">
+    <section class="zero">
+      <div id="results-wrapper">
+        <h3>We found {{ model.total }}</h3>
+        <ul id="results-list">
+          {{#each model.evsArr as |ev| }}
+          <li>
+            <div class="ev-wrapper">
+              <h4>{{ ev.name }}</h4>
+              <img src="{{ ev.logoUrl }}" />
+              <ul>
+                <li>Starts <span>{{ ev.start }}</span></li>
+                <li>Ends <span>{{ ev.end }}</span></li>
+              </ul>
+              <p>{{ ev.desc }}
+                <br />
+                <br />
+                <a href="{{ ev.eventUrl }}" target="_blank" class="btn clickthrough">Find out more <i class="fa fa-caret-right"></i></a>
+              </p>
+            </div>
+          </li>
+          {{/each }}
+        </ul>
+        <div id="powered">
+          <p>API results powered by</p>
+          <i class="ico-eventbrite-logo"></i>
         </div>
-      </li>
-      {{/each }}
-    </ul>
-    <div id="powered">
-        <p>API results powered by</p>
-        <i class="ico-eventbrite-logo"></i>
-    </div>
-  </div>
-</section>
-    </script>
-  </body>
+      </div>
+    </section>
+  </script>
+</body>
 </html>

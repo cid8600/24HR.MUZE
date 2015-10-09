@@ -5,6 +5,10 @@ export default Ember.Route.extend({
     var that = this;
     var eb = {
 
+        init: function() {
+            this.buildStr();
+        },
+
         buildSels: function() {
 
             var mi, miStr, pop, popStr, price, priceStr, selectStrs;
@@ -75,8 +79,8 @@ export default Ember.Route.extend({
         }
     };
 
-    var url = eb.buildStr();
-    //'https://www.eventbriteapi.com/v3/events/search/?categories=103&location.latitude=37.786288299999995&location.longitude=-122.39139839999999&start_date.range_start=2015-10-08T13:23:34&start_date.range_end=2015-10-09T13:23:34&popular=false&location.within=50mi&price=paid&token=63KPUFEERQXFNLX6J5QK';
+    var url = eb.init();
+
     return Ember.$.getJSON(url).then(function(data) {
 
         var evsArr = [];
