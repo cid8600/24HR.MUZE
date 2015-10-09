@@ -1,43 +1,44 @@
 <div id="submit-wrapper">
     <h1><i class="fa fa-headphones"></i> 24HR.MUZE</h1>
+
     <a class="getlocationbtn btn" href="#">Locate Muze <i class="fa fa-caret-right"></i></a>
 
     <div class="hidden action-container">
-    <div class="dropdown" data-radius="radius">
-      <div class="dropdown-container">
-        <p class="dropdown-description">Max Miles From You</p>
-        <p class="dropdown-button">Select</p>
-        <ul class="dropdown-menu dropdown-select">
-          <li data-value="2">2</li>
-          <li data-value="5">5</li>
-          <li data-value="20">20</li>
-          <li data-value="50">50</li>
-        </ul>
+      <div class="dropdown" data-radius="radius">
+        <div class="dropdown-container">
+          <p class="dropdown-description">Max Miles From You</p>
+          <p class="dropdown-button">Select</p>
+          <ul class="dropdown-menu dropdown-select">
+            <li data-value="2">2</li>
+            <li data-value="5">5</li>
+            <li data-value="20">20</li>
+            <li data-value="50">50</li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <div class="dropdown" data-popularity="popularity">
-      <div class="dropdown-container">
-        <p class="dropdown-description">List Only Popular Venues?</p>
-        <p class="dropdown-button">Select</p>
-        <ul class="dropdown-menu dropdown-select">
-          <li data-value="true">True</li>
-          <li data-value="false">False</li>
-        </ul>
+      <div class="dropdown" data-popularity="popularity">
+        <div class="dropdown-container">
+          <p class="dropdown-description">List Only Popular Venues?</p>
+          <p class="dropdown-button">Select</p>
+          <ul class="dropdown-menu dropdown-select">
+            <li data-value="true">True</li>
+            <li data-value="false">False</li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <div class="dropdown" data-price="price">
-      <div class="dropdown-container">
-        <p class="dropdown-description">Venue Price?</p>
-        <p class="dropdown-button">Select</p>
-        <ul class="dropdown-menu dropdown-select">
-          <li data-value="free">Free</li>
-          <li data-value="paid">Paid</li>
-        </ul>
+      <div class="dropdown" data-price="price">
+        <div class="dropdown-container">
+          <p class="dropdown-description">Venue Price?</p>
+          <p class="dropdown-button">Select</p>
+          <ul class="dropdown-menu dropdown-select">
+            <li data-value="free">Free</li>
+            <li data-value="paid">Paid</li>
+          </ul>
+        </div>
       </div>
-    </div>
-
-    <a class="inspirebtn btn" id="inspirebtn" href="#">Be 'Muzed <i class="fa fa-caret-right"></i></a>
+      {{#link-to 'results' class="inspirebtn btn" id="inspirebtn"}}Be 'Muzed <i class="fa fa-caret-right"></i>{{/link-to}}
+      {{!-- <a class="inspirebtn btn" id="inspirebtn" href="#"> </a> --}}
     </div>
 </div>

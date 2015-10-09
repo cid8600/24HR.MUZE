@@ -6,7 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('pull', {path: '/'});
+  this.route('results', {path: '/results'});
 });
 
 export default Router;

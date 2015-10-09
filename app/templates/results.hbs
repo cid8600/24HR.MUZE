@@ -1,0 +1,28 @@
+<section class="zero">
+  <div id="results-wrapper">
+    <h3>We found {{ model.total }}</h3>
+    <ul id="results-list">
+      {{#each model.evsArr as |ev| }}
+      <li>
+        <div class="ev-wrapper">
+          <h4>{{ ev.name }}</h4>
+          <img src="{{ ev.logoUrl }}" />
+          <ul>
+            <li>Starts <span>{{ ev.start }}</span></li>
+            <li>Ends <span>{{ ev.end }}</span></li>
+          </ul>
+          <p>{{ ev.desc }}
+            <br />
+            <br />
+            <a href="{{ ev.eventUrl }}" target="_blank" class="btn clickthrough">Find out more <i class="fa fa-caret-right"></i></a>
+          </p>
+        </div>
+      </li>
+      {{/each }}
+    </ul>
+    <div id="powered">
+        <p>API results powered by</p>
+        <i class="ico-eventbrite-logo"></i>
+    </div>
+  </div>
+</section>

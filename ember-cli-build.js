@@ -17,6 +17,7 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  app.import('bower_components/ember/ember-template-compiler.js');
   app.import('bower_components/moment/min/moment-with-locales.min.js');
   app.import('vendor/jquery.backstretch.min.js');
   app.import('vendor/jquery.debounce.js');
